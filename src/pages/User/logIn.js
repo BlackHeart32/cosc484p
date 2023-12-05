@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useState, useEffect } from "react";
-import ReactDOM from'react-dom'
 import { Link } from 'react-router-dom';
 import { MdTextsms } from "react-icons/md";
 import {HiMail} from 'react-icons/hi'
@@ -32,7 +31,6 @@ const LogIn = (props) => {
 
     return (
         <>
-        {screen === 'auth'}
             <UserForm></UserForm>
         </>
     )
@@ -76,7 +74,7 @@ const UserForm = () => {
 
     return (
         <>
-        {screen === 'auth'}?
+        <div>
             <form className="user-form" id='login' onSubmit={auth} >
                 <label htmlFor="login">Username:
                     <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
@@ -97,8 +95,9 @@ const UserForm = () => {
                 </div>
                 <Link></Link>
             </form>
-            : <LogIn screen={screen} setScreen={setScreen} />
-        </>)
+            </div>
+        </>
+        )
 }
 
 //****** Server Comm ******/
