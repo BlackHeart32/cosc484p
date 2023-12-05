@@ -7,7 +7,7 @@ import Calculator from "./Calculator/Calculator";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "../navigation/navbar";
 import StopwatchTimer from "./stopwatch/stopwatch";
-// import Apps from "./Calenders/Apps";
+import Apps from "./Calenders/Apps";
 
 function Layout() {
   return (
@@ -26,7 +26,7 @@ function Layout() {
             path="/stopwatch"
             element={<StopwatchTimer></StopwatchTimer>}
           ></Route>
-          {/* <Route path="/calenders" element={<Apps></Apps>}></Route> */}
+          <Route path="/calenders" element={<Apps></Apps>}></Route>
 
           <Route path="/login" element={<LogIn></LogIn>}></Route>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>

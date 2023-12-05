@@ -31,9 +31,9 @@ class Navbar extends Component {
             <NavLink to="/stopwatch" activeStyle>
               Stopwatch Timer
             </NavLink>
-            {/* <NavLink to="/calenders" activeStyle> */}
-            {/* Sweat Calendar */}
-            {/* </NavLink> */}
+            <NavLink to="/calenders" activeStyle>
+              Sweat Calendar
+            </NavLink>
             <>
               <NavLink to="/">
                 <WebsiteName>
